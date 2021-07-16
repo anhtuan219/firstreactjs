@@ -1,17 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'; // dung React de tao component
+import ReactDom from 'react-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// function co ten ham ma chu cai dau duoc viet hoa de chi dinh do la functional component
+function Greeting(){
+    return <h2>This is first component</h2>
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// ReactDom.render nhan 2 doi so: components se duoc render va noi se render components 
+ReactDom.render(<Greeting />, document.getElementById('root'));
+//ReactDom.render(<Greeting></Greeting>, document.getElementById('root'));
