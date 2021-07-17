@@ -14,9 +14,9 @@ const Hi = () => {
 
 // ReactDom.render nhan 2 doi so: components se duoc render va noi se render components
 ReactDom.render(
-  <div>
+  <>
     <Greeting /> <Hi />
-  </div>,
+  </>,
   document.getElementById("root")
 );
 //ReactDom.render(<Greeting></Greeting>, document.getElementById('root'));
