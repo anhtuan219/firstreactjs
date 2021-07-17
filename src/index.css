@@ -23,6 +23,14 @@ body {
   text-align: center;
 }
 
+.btn-click {
+  padding: 0.25rem;
+  background-color: lightskyblue;
+  border: 0.1rem solid lightgray;
+  color: white;
+  border-radius: 0.25rem;
+}
+
 @media screen and (min-width: 768px) {
   .book-list {
     width: 90vw;
