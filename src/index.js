@@ -18,19 +18,26 @@ let secondBook = {
 function BookList() {
   return (
     <section className="book-list">
-      <Book title={firstBook.title} imageSrc={firstBook.imageSrc} />
+      <Book title={firstBook.title} imageSrc={firstBook.imageSrc}>
+        <p>
+          Data between opening and closing tag of component can be accessed by
+          the children of props, the name 'children' is compulsory and cannot be
+          replaced by any other name
+        </p>
+      </Book>
       <Book title={secondBook.title} imageSrc={secondBook.imageSrc} />
     </section>
   );
 }
 
 const Book = (props) => {
-  const { title, imageSrc } = props;
+  const { title, imageSrc, children } = props;
   return (
     <article className="book-item">
       <p style={{ fontSize: "1.5rem" }}>This is a book</p>
       <h4>{title}</h4>
       <img src={imageSrc} alt="Image of Book" />
+      {children}
     </article>
   );
 };
