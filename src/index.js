@@ -23,9 +23,7 @@ function BookList() {
   return (
     <section className="book-list">
       {arrayProps.map((book) => {
-        return (
-          <Book key={book.id} title={book.title} imageSrc={book.imageSrc} />
-        );
+        return <Book key={book.id} {...book} />;
       })}
     </section>
   );
