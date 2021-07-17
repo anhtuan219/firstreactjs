@@ -19,7 +19,7 @@ function BookList() {
 const Book = () => {
   return (
     <article className="book-item">
-      <p>This is a book</p>
+      <p style={{ fontSize: "1.5rem" }}>This is a book</p>
       <BookTitle />
       <BookImage />
     </article>
