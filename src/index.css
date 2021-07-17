@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+.book-list {
+  width: 90vw;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.book-item {
+  background-color: rgb(255, 255, 158);
+  border: 1rem solid greenyellow;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .book-list {
+    width: 90vw;
+    margin: 5rem auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
