@@ -25,11 +25,12 @@ function BookList() {
 }
 
 const Book = (props) => {
+  const { title, imageSrc } = props;
   return (
     <article className="book-item">
       <p style={{ fontSize: "1.5rem" }}>This is a book</p>
-      <h4>{props.title}</h4>
-      <img src={props.imageSrc} alt="Image of Book" />
+      <h4>{title}</h4>
+      <img src={imageSrc} alt="Image of Book" />
     </article>
   );
 };
